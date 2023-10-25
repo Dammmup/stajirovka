@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div id="app">
+      <router-view></router-view>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router"></script>
+    <script src="main.js"></script>
+    <button @click="goBack">Back to Gallery</button>
+<img :src="selectedImage.src" :alt="selectedImage.name">
+<h2>{{ selectedImage.name }}</h2>
+<p>Author: {{ selectedImage.author }}</p>
+
+  </body>
+</html>
+
